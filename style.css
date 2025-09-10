@@ -69,6 +69,8 @@
         }
 
         .inicio {
+        display: flex;
+        flex-direction: column;
         height: 80vh;
         text-align: center;
         padding: 100px 20px;
@@ -85,9 +87,17 @@
         }
 
         .inicio p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: #ddd;
+        margin: -110px 0 110px 0;
         }
+
+        .inicio img{
+        width: 800px;     /* tamaño fijo */
+        height: auto;
+        display: block;
+        margin: 0;
+    }
 
         .intro-studio {
         display: flex;
@@ -494,3 +504,4 @@
         width: 100%;
     }
     }
+
