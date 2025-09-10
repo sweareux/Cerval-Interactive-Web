@@ -1,0 +1,125 @@
+.logo-section {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.logo-equipo {
+    height: 450px;
+    width: auto;
+    flex: 0 0 auto;
+}
+
+.quienes-somos {
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 60px 10%;
+    background: linear-gradient(to bottom, #0b0b0b, #222);
+}
+
+.quienes-somos .texto {
+    flex: 2;
+}
+
+.quienes-somos h2 {
+    color: #C11415;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.quienes-somos p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #f2f2f2;
+}
+
+.quienes-somos .cita {
+    width: 90%;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #f2f2f2;
+    border-left: 4px solid #DDB764;
+    padding-left: 10px;
+}
+
+.quienes-somos .imagen {
+    flex: 0 0 350px;
+    background-color: #ccc;
+    height: 350px;
+    width: 100px;
+}
+
+.equipo {
+    background-color: #111;
+    padding: 80px 10%;
+}
+
+.texto-equipo {
+    font-size: 2.5rem;
+    margin-bottom: -20px;
+    color: #f2f2f2;
+}
+
+.texto-equipo2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #DDB764;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.tarjeta-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f2f2f2;
+}
+
+.tarjeta {
+    background-color: #222;
+    flex: 1;
+    min-height: 300px;
+    min-width: 200px;
+    max-width: 220px;
+    padding: 20px;
+    border-radius: 105px 105px 0 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tarjeta h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .quienes-somos {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    .equipo {
+        padding: 40px 5%;
+    }
+
+    .tarjetas {
+        justify-content: center;
+    }
+}
