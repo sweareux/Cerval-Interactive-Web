@@ -33,7 +33,7 @@
         }
 
         header .logo img {
-        height: 50px; /* Ajusta el tamaño a lo que necesites */
+        height: 50px;
         width: auto;
         }
 
@@ -59,7 +59,7 @@
         color: #1E235A;
         }
         #menu-toggle {
-        display: none; /* Ocultamos el checkbox */
+        display: none;
         }
 
         .menu-icon {
@@ -93,7 +93,7 @@
         }
 
         .inicio img{
-        width: 800px;     /* tamaño fijo */
+        width: 800px;
         height: auto;
         display: block;
         margin: 0;
