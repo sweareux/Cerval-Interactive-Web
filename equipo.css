@@ -110,10 +110,37 @@
     color: #ccc;
 }
 
+@media (max-width: 1024px) {
+    .quienes-somos {
+        gap: 50px;
+        padding: 40px 8%;
+    }
+
+    .quienes-somos h2 {
+        font-size: 2.5rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .logo-section {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .logo-equipo {
+        max-height: 300px;
+    }
+
     .quienes-somos {
         flex-direction: column;
+        text-align: center;
+        gap: 30px;
         padding: 40px 5%;
+    }
+
+    .quienes-somos .imagen {
+        height: 250px;
+        max-width: 100%;
     }
 
     .equipo {
@@ -122,5 +149,20 @@
 
     .tarjetas {
         justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .quienes-somos h2 {
+        font-size: 2rem;
+    }
+
+    .quienes-somos p {
+        font-size: 0.9rem;
+    }
+
+    .tarjeta {
+        min-width: 160px;
+        max-width: 100%;
     }
 }

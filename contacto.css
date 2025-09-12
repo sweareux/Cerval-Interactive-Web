@@ -1,0 +1,169 @@
+    .contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #141414, #0b0b0b);
+    }
+
+    .contacto h1 {
+    color: #F2F2F2;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    }
+
+    .contacto .linea {
+    width: 120px;
+    height: 5px;
+    background: #C11415;
+    margin: 0 auto 40px auto;
+    }
+
+    .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    }
+
+    .contact-info .card-contacto {
+    display: flex;
+    flex-direction: column;
+    background: #1c1c1c;
+    height: 250px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    text-align: justify;
+    }
+
+
+    .card-contacto p{
+        color: #f2f2f2;
+        font-size: 0.9rem;
+    }
+
+    .contact-info .card-contacto h3{
+    font-size: 2.3rem;
+    line-height: 1;
+    text-align: center;
+    color: #F2F2F2;
+    }
+
+    .contact-info span {
+    color: #DDB764;
+    }
+
+    .contact-info i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #c4c4c4;
+    }
+
+    .contact-form {
+    width: 79%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    gap: 120px;
+    background: #1c1c1c;
+    padding: 30px;
+    }
+
+    .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+    background: #3e3e3e;
+    border: none;
+    padding: 12px;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 0.95rem;
+    }
+
+    .contact-form textarea {
+    resize: none;
+    height: 120px;
+    }
+
+    .contact-form button {
+    background: #131313;
+    color: #fff;
+    border: 1px solid #EA0607;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+    background: #C11415;
+    }
+
+
+    .mensaje-lado h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #f2f2f2;
+    }
+
+    .mensaje-lado span {
+    color: #d4af37;
+    }
+
+@media (max-width: 992px) {
+    .contact-form {
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .mensaje-lado {
+        order: -1;
+        text-align: center;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+
+    .mensaje-lado h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacto h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        gap: 25px;
+        padding: 15px;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+
+    .mensaje-lado h2 {
+        font-size: 1.8rem;
+    }
+}

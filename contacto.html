@@ -5,26 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerval Interactive</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    </head>
+    <body>
     <header>
-            <a href="#inicio" class="logo">
-                <img class="logo-inicio" src="img/Cerval Interactive Logo Oscuro.png" alt="Cerval Interactive Logo">
-            </a>
-
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-
-            <nav>
-                <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="equipo.html">Equipo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <a href="index.html" class="logo">
+        <img class="logo-inicio" src="img/Cerval Interactive Logo Oscuro.png" alt="Cerval Interactive Logo">
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
     </header>
 
-    <h1 class="seccion">Sección Contacto</h1>
+    
+    <section class="contacto">
+        <h1>CONTÁCTANOS</h1>
+        <div class="linea"></div>
+
+        <div class="contact-info">
+        <div class="card-contacto">
+            <h3>Ponte en <span>contacto</span></h3>
+        </div>
+        <div class="card-contacto">
+            <i class="fas fa-clock"></i>
+            <p><strong>Horarios de trabajo</strong><br>Lunes a viernes<br>10AM a 6PM</p>
+        </div>
+        <div class="card-contacto">
+            <i class="fas fa-envelope"></i>
+            <p><strong>Medios de contacto</strong><br>123-456-7890<br>contact@cervalinteractive.com</p>
+        </div>
+        </div>
+
+        <div class="contact-form">
+        <form>
+            <input type="text" placeholder="¿Cuál es tu nombre?">
+            <input type="email" placeholder="Tu correo electrónico">
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+        <div class="mensaje-lado">
+            <h2>Queremos <br><span>escucharte</span></h2>
+        </div>
+        </div>
+    </section>
+
+  
+  
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-col">
+            <h2>Cerval Interactive</h2>
+            <p>Creando mundos inmersivos y únicos</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+
+            <div class="footer-col">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyecto">Proyectos</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Correo electrónico</h3>
+                <form>
+                    <input type="email" placeholder="Escribe tu correo" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+        <div id="copyright">
+            <p>© 2025. All rights reserved.</p>
+        </div>
+        </footer>
 </body>
 </html>
