@@ -1,32 +1,138 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Cerval Interactive</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cerval Interactive</title>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="proyectos.css">
+        
+    </head>
+    <body>
+        
         <header>
-            <a href="#inicio" class="logo">
-                <img class="logo-inicio" src="img/logo.png" alt="Cerval Interactive Logo">
-            </a>
-
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-
+            <div class="logo">
+                <img src="img/Cerval Interactive Logo Oscuro.png" alt="Cerval Interactive Logo">
+            </div>
             <nav>
-                <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="equipo.html">Equipo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-    </header>
+        </header>
 
 
-    <h1 class="seccion">Sección Proyectos</h1>
-</body>
-</html>
+        <section class="hero">
+            <h1>EXPLORA</h1>
+            <h2>NUESTROS PROYECTOS</h2>
+
+        </section>
+
+        <section class="proyectos">
+            <h2>Mundos inmersivos</h2>
+            <p>Cada proyecto es un reflejo de nuestra pasión por contar historias y crear experiencias únicas. Nuestros ideas se transforman en mundos que puedes explorar.</p>
+            <div class="grid">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </section>
+
+        <section class="destacado-container">
+    <div class="destacado active">
+        <div class="texto">
+            <h2>Mexihcah: <br>Blood of the Sun</h2>
+            <h3>Proyecto Destacado</h3>
+            <p>Más allá de un juego. Una obra de arte donde la fantasía choca con las raíces de civilizaciones míticas. Aventuras, batallas y descubrimientos esperan dentro de este proyecto, diseñado para transportar a los jugadores a un universo épico, inmersivo y lleno de emoción.</p>
+            <a href="#" class="btn nextBtn">Siguiente →</a>
+        </div>
+        <div class="imagen">
+
+        </div>
+    </div>
+
+    <div class="destacado">
+        <div class="texto">
+            <h2>ArchViz</h2>
+            <h3>Tour Virtual</h3>
+            <p>Explora un departamento como si estuvieras allí. Nuestra experiencia en realidad virtual permite recorrer cada espacio de manera inmersiva, ofreciendo una forma innovadora y sorprendente para que las inmobiliarias presenten sus propiedades y cautiven a sus clientes.</p>
+            <div class="btn-group">
+        <a href="#" class="btn nextBtn">Siguiente →</a>
+        <a href="archviz.html" class="link-light">Probar ahora</a>
+    </div>
+        </div>
+        <div class="imagen">
+
+        </div>
+    </div>
+</section>
+
+        
+
+
+
+
+        <footer>
+        <div class="footer-container">
+
+            <div class="footer-col">
+            <h2>Cerval Interactive</h2>
+            <p>Creando mundos inmersivos y únicos</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+
+            <div class="footer-col">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyecto">Proyectos</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Correo electrónico</h3>
+                <form>
+                    <input type="email" placeholder="Escribe tu correo" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+        <div id="copyright">
+            <p>© 2025. All rights reserved.</p>
+        </div>
+        </footer>
+
+        <script>
+            const slides = document.querySelectorAll('.destacado-container .destacado');
+const nextBtns = document.querySelectorAll('.nextBtn');
+let currentIndex = 0;
+
+nextBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        slides[currentIndex].classList.add('exit-left');
+        slides[currentIndex].classList.remove('active');
+
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add('active');
+
+        slides[currentIndex].classList.remove('exit-left');
+    });
+});
+
+        </script>
+    </body>
+    </html>

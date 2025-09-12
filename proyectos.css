@@ -1,0 +1,172 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #141414, #0b0b0b);
+    color: #fff;
+    text-align: center;
+    height: 80vh;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0 0 0 100px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: #EA0607;
+    margin: -28px 0 0 100px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+.proyectos {
+    text-align: center;
+    padding: 60px 20px;
+    color: #fff;
+    background: #1a1a1a;
+}
+
+.proyectos h2 {
+    color: #ddb764;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.proyectos p {
+    max-width: 700px;
+    margin: -10px auto 20px;
+    color: #ccc;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    min-height: 350px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.destacado-container {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.destacado {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background: #0f0f0f;
+    color: #fff;
+    gap: 40px;
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 80vh;
+    transition: left 0.5s ease-in-out;
+}
+
+.destacado.active {
+    left: 0;
+}
+
+.destacado.exit-left {
+    left: -100%;
+}
+
+.destacado .texto {
+    flex: 1 1 400px;
+}
+
+.destacado .texto h2 {
+    font-size: 2.5rem;
+    color: #EA0607;
+    line-height: 1.1;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+}
+
+.destacado .texto h3 {
+    font-size: 2rem;
+    margin: -10px 0 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    color: #f2f2f2;
+}
+
+.destacado .texto p {
+    color: #ccc;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 90%;
+    line-height: 1.6;
+}
+
+.destacado .btn {
+    display: inline-block;
+    padding: 8px 24px;
+    background: #EA0607;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.destacado .btn:hover {
+    background: #C11415;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 35px; 
+    margin-top: 10px;
+}
+
+.link-light {
+    color: #a9a9a9;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.link-light:hover {
+    color: #fff;
+}
+
+.destacado .imagen {
+    flex: 1 1 250px;
+    background: #ccc;
+    min-height: 300px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.destacado .imagen img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}

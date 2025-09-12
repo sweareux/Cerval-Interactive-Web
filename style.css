@@ -15,8 +15,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    background: #F2F2F2;
+    padding: 10px 60px;
+    background: #0e0e0e;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -33,7 +33,7 @@ header::after {
 }
 
 header .logo img {
-    height: 50px;
+    height: 40px;
     width: auto;
 }
 
@@ -45,13 +45,13 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #242424;
+    color: #f2f2f2;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #1E235A;
+    color: #C11415;
 }
 
 #menu-toggle {
@@ -64,14 +64,14 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* Inicio */
+/* inicio */
 .inicio {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 85vh;
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(to bottom left, #090909, #2c2c2c);
+    background: linear-gradient(to bottom left, #090909, #131313);
     justify-content: center;
     align-items: center;
 }
@@ -88,7 +88,7 @@ nav ul li a:hover {
     margin: 0;
 }
 
-/* Intro Studio */
+/* intro studio */
 .intro-studio {
     display: flex;
     align-items: center;
@@ -132,7 +132,7 @@ nav ul li a:hover {
     border-radius: 80px 0 0 0;
 }
 
-/* Enfoque */
+/* enfoque */
 .enfoque {
     display: flex;
     flex-direction: column;
@@ -142,7 +142,7 @@ nav ul li a:hover {
     padding: 80px 60px;
     text-align: center;
     line-height: 1.5;
-    background: radial-gradient(circle at center, #202020, #1a1a1a, transparent);
+    background: radial-gradient(circle at center, #090909, #131313, transparent);
 }
 
 .enfoque h1 {
@@ -159,7 +159,7 @@ nav ul li a:hover {
 
 .card {
     flex: 1;
-    background: #343434;
+    background: #1b1b1b;
     border-radius: 12px;
     padding: 5px;
     margin: 20px 0;
@@ -194,12 +194,12 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Proyecto Destacado */
+/* proyecto destacado */
 .proyecto-destacado {
     display: flex;
     gap: 40px;
     padding: 100px 60px;
-    background: radial-gradient(circle at center, #202020, #1a1a1a, transparent);
+    background: radial-gradient(circle at center, #090909, #131313, transparent);
     align-items: center;
     justify-content: center;
     color: #f2f2f2;
@@ -244,7 +244,7 @@ nav ul li a:hover {
     border-radius: 12px;
 }
 
-/* Footer */
+/* footer */
 footer {
     background: radial-gradient(circle at center, #DDB764, #B19049);
     color: #fff;
@@ -333,12 +333,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #2F2F2F, #141414);
+    background: linear-gradient(to right, #181818, #090909);
     width: 100vw;
     height: 90px;
 }
 
-/* Responsive */
+/* responsive */
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
