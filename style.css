@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 .inicio p {
     color: #ddd;
-    margin: 20px 0 40px 0;
+    margin: -120px 0 40px 0;
 }
 
 .inicio img {
@@ -362,7 +362,6 @@ footer {
     }
 
     .intro-studio, .proyecto-destacado {
-        flex-direction: column;
         text-align: center;
         padding: 40px 20px;
     }
@@ -400,11 +399,6 @@ footer {
         margin: 0;
     }
 }
-
-.inicio br {
-        display: none;
-    }
-
 
 @media (max-width: 768px) {
     .inicio {
