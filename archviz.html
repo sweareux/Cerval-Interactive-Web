@@ -11,33 +11,60 @@
 <body>
 
     <header>
-            <div class="logo">
-                <img src="img/Cerval Interactive Logo Oscuro.png" alt="Cerval Interactive Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="equipo.html">Equipo</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="logo">
+            <img src="img/Cerval Interactive Logo Oscuro.png" alt="Cerval Interactive Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <h1>ArchViz</h1>
+        <h2>Tour Virtual</h2>
+        <a href="#tour" class="btn-hero">Probar ahora</a>
+    </section>
 
-        <section class="hero">
-            <h1>ArchViz</h1>
-            <h2>Tour Virtual</h2>
-            <a href="#tour" class="btn-hero">Probar ahora</a>
-
-
-        </section>
-
-            <section id="tour" class="tour-section">
+    <section id="tour" class="tour-section">
         <div class="tour-container">
-    
+
+            <div class="loader" id="tourLoader" style="display:none;">
+                <span class="dot dot1">•</span>
+                <span class="dot dot2">•</span>
+                <span class="dot dot3">•</span>
+            </div>
+
+            <div class="demo-message" id="demoMessage" style="display:none;">
+                Próximamente disponible
+            </div>
         </div>
     </section>
-    
+
+    <script>
+        const btnHero = document.querySelector('.btn-hero');
+        const tourSection = document.getElementById('tour');
+        const tourLoader = document.getElementById('tourLoader');
+        const demoMessage = document.getElementById('demoMessage');
+
+        btnHero.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            tourSection.scrollIntoView({ behavior: 'smooth' });
+
+            tourLoader.style.display = 'flex';
+            demoMessage.style.display = 'none';
+
+            setTimeout(() => {
+                tourLoader.style.display = 'none';
+                demoMessage.style.display = 'block';
+            }, 1600); 
+        });
+    </script>
+
 </body>
 </html>

@@ -156,9 +156,12 @@
 .destacado .imagen {
     flex: 1 1 250px;
     background: #ccc;
-    min-height: auto;
+    min-height: 250px;
     border-radius: 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .destacado .imagen img {
