@@ -1,34 +1,33 @@
-.hero{
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 100vh;
+    padding: 0 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #141414, #0b0b0b);
 }
-
 .hero h1 {
-    font-size: 6rem;
+    font-size: clamp(2.5rem, 8vw, 6rem);
     font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     background: #fff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 4px 6px 0 #ddb764;
 }
-
 .hero h2 {
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 700;
     font-family: 'Barlow Condensed', sans-serif;
     color: #fff;
-    margin-top: -30px;
+    margin-top: -10px;
 }
-
 .btn-hero {
     display: inline-block;
     margin-top: 30px;
-    padding: 12px 20px;
+    padding: 12px 24px;
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
@@ -39,14 +38,9 @@
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
-
 .btn-hero:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.6);
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .tour-section {
@@ -54,17 +48,15 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 120px 20px 60px;
     text-align: center;
 }
-
 .tour-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 .tour-container {
     width: 100%;
     max-width: 1200px;
@@ -79,6 +71,7 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
 .loader {
@@ -89,16 +82,13 @@ html {
     margin-top: 20px;
     color: #ececec;
 }
-
 .dot {
     display: inline-block;
-    animation: bounce 0.8s ease-in-out 0s 2;
+    animation: bounce 0.8s ease-in-out 0s infinite;
 }
-
 .dot1 { animation-delay: 0s; }
 .dot2 { animation-delay: 0.15s; }
 .dot3 { animation-delay: 0.3s; }
-
 @keyframes bounce {
     0%, 60%, 100% { transform: translateY(0); }
     30% { transform: translateY(-20px); }
@@ -112,19 +102,35 @@ html {
     opacity: 0;
     animation: fadeIn 1s forwards;
 }
-
 @keyframes fadeIn {
     to { opacity: 1; }
 }
 
-/* responsive */
-@media (max-width: 600px) {
-    .demo-message {
-        font-size: 1rem;
+@media (max-width: 1024px) {
+    .tour-container {
+        height: 70vh;
     }
+}
 
+@media (max-width: 768px) {
+    .tour-section h2 {
+        font-size: 2rem;
+    }
+    .demo-message {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
     .loader {
         font-size: 2rem;
         gap: 10px;
+    }
+    .demo-message {
+        font-size: 1.5rem;
+    }
+    .btn-hero {
+        padding: 10px 18px;
+        font-size: 0.9rem;
     }
 }
