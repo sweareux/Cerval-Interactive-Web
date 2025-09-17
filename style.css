@@ -166,11 +166,9 @@ nav ul li a:hover {
 .card {
     flex: 1;
     min-width: 250px;
-    max-width: 350px;
     background: #1b1b1b;
     border-radius: 12px;
     padding: 5px;
-    margin: 20px 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -418,12 +416,61 @@ footer {
         margin: 5px 0 15px 0;
     }
 
+    /* ✅ Ajuste para que la imagen de intro-studio no se oculte */
+    .intro-studio {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
     .img-studio {
         width: 100%;
+        max-width: 350px;
         height: auto;
-        max-height: 300px;
-        margin: 20px 0;
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
     }
+
+    .img-studio img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 80px 0 0 0;
+    }
+
+    .enfoque {
+        padding: 40px 30px 0 30px;
+    }
+
+    .enfoque h1 {
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    .enfoque p {
+        text-align: justify center;
+    }
+
+    .enfoque br {
+        display: none;
+    }
+
+    .proyecto-destacado {
+        padding: 30px 30px;
+    }
+
+    .proyecto-destacado p{
+        text-align: justify;
+    }
+
+    .proyecto-destacado h1{
+        font-size: 1.8rem;
+    }
+
+
+    /* ----------------------------------- */
 
     .slide {
         flex: 0 0 90%;
@@ -437,6 +484,10 @@ footer {
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+
+    footer{
+        padding: 20px 0 0 0;
     }
 
     .footer-col form input,
@@ -500,6 +551,10 @@ footer {
         display: none;
     }
 
+    .enfoque br {
+        display: none;
+    }
+
     header h1 {
         font-size: 1.2rem;
     }
@@ -522,11 +577,18 @@ footer {
         font-size: 1.2rem;
     }
 
+    .intro-studio p {
+        text-align: justify;
+    }
+
     .card-text p,
     .proyecto-destacado p,
     .intro-studio p,
     .enfoque p {
         font-size: 0.8rem;
+    }
+    .enfoque {
+        padding: 70px 30px;
     }
 
     .slide {
@@ -535,7 +597,7 @@ footer {
     }
 
     footer {
-        padding: 25px 10px 0 10px;
+        padding: 25px 0 0 0;
         display: flex;
         flex-direction: column;
         align-items: center;

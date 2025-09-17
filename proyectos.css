@@ -73,18 +73,16 @@
 .destacado {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 80px 10%;
     background: #0f0f0f;
     color: #fff;
     gap: 30px;
-
     position: absolute;
     top: 0;
     left: 100%;
     width: 100%;
-
     transition: all 0.5s ease-in-out;
     box-sizing: border-box;
 }
@@ -92,9 +90,23 @@
 .destacado.active { left: 0; }
 .destacado.exit-left { left: -100%; }
 
+/* Texto */
 .destacado .texto {
     flex: 1 1 400px;
     min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagen dentro del texto para poder moverla */
+.destacado .texto .imagen {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background: #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: auto; /* solo para desktop a un lado */
 }
 
 .destacado .texto h2 {
@@ -154,6 +166,7 @@
 
 .link-light:hover { color: #fff; }
 
+/* Imagen principal (fuera del texto) para desktop si quieres mantenerla aparte */
 .destacado .imagen {
     flex: 1 1 250px;
     background: #ccc;
@@ -165,7 +178,8 @@
     overflow: hidden;
 }
 
-.destacado .imagen img {
+.destacado .imagen img,
+.destacado .texto .imagen img {
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -175,7 +189,9 @@
     transition: all 0.3s ease;
 }
 
+/* MEDIA QUERIES */
 
+/* Tablets grandes */
 @media (max-width: 1024px) {
     .hero {
         align-items: center;
@@ -192,15 +208,16 @@
         padding: 60px 20px;
         height: auto;
     }
+
     .destacado .texto p { width: 100%; text-align: center; }
-    .destacado .imagen { min-height: auto; margin-top: 20px; }
-    .destacado .imagen img {
-        height: auto;
-        object-fit: contain;
-    }
+
+    .destacado .texto .imagen,
+    .destacado .imagen { width: 100%; margin: 20px 0; position: static; }
+
     .btn-group { justify-content: center; }
 }
 
+/* Tablets y móviles medianos */
 @media (max-width: 768px) {
     .hero {
         padding: 20px 15px;
@@ -213,19 +230,23 @@
 
     .grid { gap: 12px; }
 
-    .destacado { padding: 40px 15px; gap: 15px; }
+    .destacado { padding: 40px 35px; }
     .destacado .texto h2 { font-size: 2rem; }
     .destacado .texto h3 { font-size: 1.5rem; }
-    .destacado .texto p { font-size: 0.95rem; }
+    .destacado .texto p { font-size: 0.95rem; text-align: justify; }
     .destacado .imagen { width: 100%; margin-top: 15px; }
-    .destacado .imagen img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
+    .destacado .imagen img,
+    .destacado .texto .imagen img { width: 100%; height: auto; }
+
     .btn { padding: 8px 20px; font-size: 0.9rem; }
+    .texto-equipo2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #DDB764;
+}
 }
 
+/* Móviles pequeños */
 @media (max-width: 480px) {
     .hero { padding: 15px 10px; min-height: 50vh; }
     .hero h1 { font-size: 2.3rem; }
@@ -238,17 +259,12 @@
     .destacado .texto h2 { font-size: 1.6rem; }
     .destacado .texto h3 { font-size: 1.2rem; }
     .destacado .texto p { font-size: 0.9rem; line-height: 1.4; text-align: justify; }
-    .destacado .imagen { width: 100%; min-height: auto; margin-top: -50px;}
-    .destacado .imagen img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
+    .destacado .texto .imagen { margin: 15px 0; width: 100%; height: auto; }
     .btn { padding: 6px 18px; font-size: 0.85rem; }
     .btn-group { flex-direction: column; gap: 12px; }
 }
 
-
+/* Ajuste de grid en móvil */
 @media (max-width: 768px) {
     .grid {
         display: flex;
