@@ -244,6 +244,10 @@
     margin-bottom: 20px;
     color: #DDB764;
 }
+
+    .proyectos p{
+        text-align: justify;
+    }
 }
 
 /* Móviles pequeños */
@@ -263,6 +267,10 @@
     .btn { padding: 6px 18px; font-size: 0.85rem; }
     .btn-group { flex-direction: column; gap: 12px; }
 }
+
+.proyectos p{
+        text-align: justify;
+    }
 
 /* Ajuste de grid en móvil */
 @media (max-width: 768px) {
